@@ -1,1 +1,52 @@
 @charset "UTF-8";
+
+h1, h2, h3 {
+	text-align: center;
+	margin: 40px 0;
+	font-weight: bold;
+}
+
+.title {
+	font-size: 30px;
+}
+
+.sub--title {
+	font-size: 24px;
+}
+
+.table--area {
+	margin-top: 30px;
+}
+
+.wrapper {
+	padding: 0 3%;
+}
+
+.content  {
+	width: 500px;
+	font-size: 16px;
+	background: #fad296;
+	border: 5px solid #8f5a0a;
+	line-height: 16px;
+	padding: 20px;
+	border-radius: 30px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.content::before, .content::after{
+	content: "";
+	position: absolute;
+	border: 20px solid transparent;
+	left: 40px;
+}
+
+.content::before  {
+	border-top: 20px solid #8f5a0a;
+	bottom: -45px;
+}
+
+.content::after {
+	border-top: 20px solid #fad296;
+	bottom: -38px;
+}
